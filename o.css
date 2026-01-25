@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.m{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/j/Rectangle\ 11.png);
+}
+
+.herocontent{
+    display: flex;
+    justify-content: space-around;
+    gap: 64%;
+}
+.m3{
+    padding-top: 22px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-bottom: 10%;
+    gap: 20px;
+}
+.m4 {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    gap: 5px;
+}
+
+.m5 {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    gap: 5px;
+    background-color: black;
+    color: white;
+}
