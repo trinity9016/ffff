@@ -213,3 +213,15 @@ img {
     padding-top: 3%;
     padding-bottom: 3%;
 }
+
+.market {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.rr {
+    height: 100%;
+    width: 100%;
+}
