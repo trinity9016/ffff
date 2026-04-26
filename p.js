@@ -1,7 +1,7 @@
 
 let a = [  
     {
-    address: 'Pushkinskaya_9',
+    address: 'Pushkinskaya 13',
     house_size: '111',
     sold: 'false',
     price: 222,
@@ -10,18 +10,17 @@ let a = [
     image: 'https://www.domrnr.ru/upload/resize_cache/iblock/719/1920_610_1/71914bddd7e9ac2a0ad18d109aae01f6.jpg',
     },
 {
-    address: 'Pushkinskaya_12',
+    address: 'Pushkinskaya 13',
     house_size: '300',
     sold: 'false',
     price: 2323,
     plot_size: 50,
     floors: 3,
     image: 'https://dom-tn.storage.yandexcloud.net/resize_cache/120581/df6a282dca525dff6a0386acd76cbf5c/iblock/b73/b73565637c59f7f6de75ff21fe3ffd56/72b26f38cf298426b5d742f8cf092b80.jpg',
-
     },
 
 {
-    address: 'Pushkinskaya',
+    address: 'Pushkinskaya 13',
     house_size: '90',
     sold: 'false',
     price: 500,
@@ -30,7 +29,7 @@ let a = [
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX2WJb10v-vhncJvAtDzUHtY8ilVKFtpxUNg&s',
     },
     {
-    address: 'Pushkinskaya_13',
+    address: 'Pushkinskaya 13',
     house_size: '400',
     sold: 'false',
     price: 200,
@@ -39,7 +38,7 @@ let a = [
     image: 'https://postroika-doma-bani.ru/d/treugolnyj_dom_2.jpg',
     },
     {
-    address: 'klop',
+    address: 'Pushkinskaya 13',
     house_size: '193',
     sold: 'false',
     price: 3255,
@@ -49,19 +48,7 @@ let a = [
     },
 ]
 
-let market = document.getElementById('market')
+let parametr = location.search.replace('?product=', '')
 
-for (let i = 0; i < a.length; i++){
-    let object = a[i]
-    market.innerHTML = market.innerHTML + `
-    <div class="card">
-    <a href="/p.html?product=${object.address}">
-            <img class="rr" src="${object.image}" alt="">
-            <h1>${object.address}</h1>
-            <p>${object.material}</p>
-            <p>${object.price}$</p>
-            <button>buy</button>
-            </a>
-        </div>
-    `
-}
+let address = document.getElementById('address')
+address.innerHTML = parametr
