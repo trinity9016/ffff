@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+button{
+    color: inherit;
+    text-decoration: inherit;
+}
+
 ul, ol {
     list-style: none;
 }
@@ -219,6 +229,8 @@ img {
     grid-template-columns: repeat(4 , 1fr);
     gap: 20px;
     padding-top: 40px;
+    position: absolute;
+    top: 2px;
 }
 
 .rr {
@@ -229,4 +241,37 @@ img {
 .ii {
     color: rgb(0, 0, 0);
     
+}
+
+.fon13 {
+    position: relative;
+    
+}
+
+.fon12{
+    width: 100%;
+    height: 640px;
+}
+
+.card {
+    display: flex;
+    color: rgb(255, 255, 255);
+    display: flex;
+    text-decoration: none;
+    border: 4px solid white;
+    
+}
+
+.card2 {
+    color: black;
+    padding: 4px;
+}
+
+.product {
+    display: flex;
+    gap: 5%;
+}
+
+.image {
+    width: 60%;
 }
